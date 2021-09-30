@@ -4,8 +4,8 @@ import {
 NavLink,
 // Bars,
 // NavMenu,
-// NavBtn,
-// NavBtnLink,
+NavBtn,
+NavBtnLink,
 } from './NavbarElements';
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ return (
 				<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNav">
-				<ul className="navbar-nav">
+				<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 			
 				<li className="nav-item">
 					<NavLink exact activeClassName="active" to='/'>Home</NavLink>
@@ -31,9 +31,9 @@ return (
 				<NavLink exact activeClassName="active" to='/contact'>Contact Us</NavLink>
 				</li>
 				</ul> 
-				{/* <NavBtn>
+				 <NavBtn>
 				<NavBtnLink to='/signin'>Sign In</NavBtnLink>
-				</NavBtn> */}
+				</NavBtn> 
 				</div>
 			</div>
 		</nav>

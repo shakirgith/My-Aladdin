@@ -41,4 +41,12 @@
 .navbar-expand-lg .navbar-nav .nav-item a { text-decoration: none;}
 .navbar-expand-lg .navbar-nav .nav-item a.active {color: rgb(255, 0, 0); text-decoration: underline;}
 
-.container {display: flex; align-items: center; justify-content: center; height: 100vh;}
+.errorimg {display: flex; align-items: center; justify-content: center; }
+.errorimg img {max-width: 120px;}
+.errorimg span {font-size: 8vh; font-weight: normal; }
+.notfound h1 {font-weight: bold; font-size: 5vh; }
+
+.container {display: flex; align-items: center; justify-content: center; height: 50vh;}
+.footer {background-color: darkgray; padding: 5px 20px;}
+.footer .copyright {text-align: center;}
+.footer .copyright p {font-size: 14px; margin-bottom: 0;}

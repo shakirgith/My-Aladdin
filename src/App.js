@@ -6,6 +6,7 @@ import Home from './MyComponents/Pages/Home';
 import About from './MyComponents/Pages/About';
 import Contact from './MyComponents/Pages/Contact';
 import Footer from './MyComponents/Layout/Footer';
+import PageNotFound from './MyComponents/Pages/Not-found';
 
 
 
@@ -17,6 +18,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="" component={PageNotFound} />
+        {/* <Route path="/not-found" /> */}
       </Switch>
       <Footer />
     </Router>
