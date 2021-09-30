@@ -7,8 +7,7 @@ import About from './MyComponents/Pages/About';
 import Contact from './MyComponents/Pages/Contact';
 import Footer from './MyComponents/Layout/Footer';
 import PageNotFound from './MyComponents/Pages/Not-found';
-
-
+import Modal from './MyComponents/Model/Register';
 
 function App() {
   return (
@@ -21,6 +20,7 @@ function App() {
         <Route path="" component={PageNotFound} />
         {/* <Route path="/not-found" /> */}
       </Switch>
+      <Modal />
       <Footer />
     </Router>
     

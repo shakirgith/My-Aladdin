@@ -32,7 +32,10 @@ return (
 				</li>
 				</ul> 
 				 <NavBtn>
-				<NavBtnLink to='/signin'>Sign In</NavBtnLink>
+				{/* <NavBtnLink>Sign In</NavBtnLink> */}
+				<NavBtnLink type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">
+				Sign In
+				</NavBtnLink>
 				</NavBtn> 
 				</div>
 			</div>
