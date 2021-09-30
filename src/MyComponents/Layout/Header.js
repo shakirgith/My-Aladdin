@@ -5,7 +5,7 @@ NavLink,
 // Bars,
 // NavMenu,
 NavBtn,
-NavBtnLink,
+NavBtnLink
 } from './NavbarElements';
 
 const Navbar = () => {
@@ -33,9 +33,9 @@ return (
 				</ul> 
 				 <NavBtn>
 				{/* <NavBtnLink>Sign In</NavBtnLink> */}
-				<NavBtnLink type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">
+				{/* <NavBtnLink type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register">
 				Sign In
-				</NavBtnLink>
+				</NavBtnLink> */}
 				</NavBtn> 
 				</div>
 			</div>

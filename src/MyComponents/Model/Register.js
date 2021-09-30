@@ -9,7 +9,7 @@ const Model = () => {
                 <h5 class="modal-title" id="exampleModalLabel">Register</h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 text here
               </div>
               {/* <div className="modal-footer">
