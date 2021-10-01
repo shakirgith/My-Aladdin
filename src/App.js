@@ -8,6 +8,7 @@ import Contact from './MyComponents/Pages/Contact';
 import Footer from './MyComponents/Layout/Footer';
 import PageNotFound from './MyComponents/Pages/Not-found';
 import Modal from './MyComponents/Model/Register';
+// import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
@@ -18,9 +19,11 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="" component={PageNotFound} />
+
         {/* <Route path="/not-found" /> */}
       </Switch>
       <Modal />
+     
       <Footer />
     </Router>
     

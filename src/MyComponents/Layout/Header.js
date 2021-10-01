@@ -7,6 +7,8 @@ NavLink,
 // NavBtn,
 // NavBtnLink
 } from './NavbarElements';
+import DropdownToggle from '../Dropdown/DropdownToggle';
+
 
 const Navbar = () => {
 return (
@@ -31,7 +33,13 @@ return (
 				<NavLink exact activeClassName="active" to='/contact'>Contact Us</NavLink>
 				</li>
 				</ul> 
-				<button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register" to='/model'>Signup</button>
+				<div className="rightmenu">
+
+					<DropdownToggle />
+				
+					
+				<button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register" to='/model'>Sign in</button>
+				</div>
 				 {/* <NavBtn>
 					<NavBtnLink>Sign In</NavBtnLink> 
 				</NavBtn>  */}
