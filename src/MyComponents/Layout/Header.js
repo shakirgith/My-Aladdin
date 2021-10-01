@@ -7,7 +7,8 @@ NavLink,
 // NavBtn,
 // NavBtnLink
 } from './NavbarElements';
-import DropdownToggle from '../Dropdown/DropdownToggle';
+import MainLogo from '../../assets/images/logo-clipart.png';
+// import DropdownToggle from '../Dropdown/DropdownToggle';
 
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ return (
 	<header className="header">
 		<nav className="navbar navbar-expand-lg navbar-light bg-light">
 			<div className="container-fluid">
-				<NavLink className="navbar-brand" to='/'>LOGO NAME</NavLink>
+				<NavLink className="navbar-brand" to='/'><img src={MainLogo} alt="LOGO NAME" title="Logo" /></NavLink>
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span className="navbar-toggler-icon"></span>
 				</button>
@@ -35,7 +36,7 @@ return (
 				</ul> 
 				<div className="rightmenu">
 
-					<DropdownToggle />
+					{/* <DropdownToggle /> */}
 				
 					
 				<button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register" to='/model'>Sign in</button>
