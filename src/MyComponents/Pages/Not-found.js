@@ -2,6 +2,7 @@ import React from 'react'
 
 const PageNotFound = () => {
     return (
+        <main id="main">
         <section id="notfound" className="notfound">
         <div className="container">
             <div id="info" className="text-center">
@@ -14,6 +15,7 @@ const PageNotFound = () => {
             </div>
         </div>
         </section>
+        </main>
     );
 };
 

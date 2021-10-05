@@ -53,13 +53,22 @@
 100%{transform:rotate(360deg)}
 } 
 
+:root {
+  --footer-height: 40px;
+  --min-height: 40px;
+  --color-orange: #fd7e14;
+  --color-red: #EE342E;
 
 
+} 
 
 body {font-family: 'Poppins', sans-serif !important;color: #121212;}
 .navbar-expand-lg .navbar-nav .nav-item {padding-right: .5rem;padding-left: .5rem;}
 .navbar-expand-lg .navbar-nav .nav-item a { text-decoration: none;}
 .navbar-expand-lg .navbar-nav .nav-item a.active {color: rgb(255, 0, 0); text-decoration: underline;}
+
+
+main,#main { min-height: calc(100vh - var(--min-height));}
 
 .errorimg {display: flex; align-items: center; justify-content: center; }
 .errorimg img {max-width: 120px;}
@@ -70,17 +79,51 @@ body {font-family: 'Poppins', sans-serif !important;color: #121212;}
 .navbar-brand img {max-width: 130px; height: auto;}
 .main-home-banner {background-position: center bottom; background-repeat: no-repeat; background-size: cover; max-height: 500px; height: 500px; position: relative; }
 
-.hero-banner-content {padding:0px;margin-left: unset;z-index: 2;position: relative;}
-.hero-banner-content .sub-title {font-size: 18px;font-weight: 500;color: #fff;}
-.hero-banner-content h1 {font-weight: bold; font-size: 5vh; color: #fff;margin-top: 20px;margin-bottom: 10px;line-height: 1.1; text-align: center;}
+.hero-section-wrap {max-width: 800px; text-align:center; margin: 0 auto;position: relative; padding-top: 50px;}
+.hero-banner-content .sub-title {font-size: 18px;font-weight: 500;color: #fff; background-color: var(--color-red); padding: 5px 10px; border-radius: 5px; -webkit-border-radius: 5px; }
+.hero-banner-content h1 {font-weight: bold; font-size: 5vh; color: #fff;margin-top: 10px;margin-bottom: 10px;line-height: 1.1; text-align: center;}
 .hero-banner-content p {font-size: 16px;color: #fff;margin-bottom: 35px;}
 
-.main-form-wrap {background-color: #fff; border-radius: 8px;-webkit-border-radius: 8px; width: 100%; height: 300px; }
+.main-form-wrap {background-color: #fff; border-radius: 0px 8px 8px 8px;-webkit-border-radius: 0px 8px 8px 8px; width: 100%; box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.25); position: relative; }
+.main-form-wrap::after {content: ""; position: absolute; left: 0; width: 100%; height: 90px; bottom: 0; background: url(../src/assets/images/svg-img/citysiloutt.svg) no-repeat 0 -40px;    background-size: 100% 350%;opacity: 0.2; }
+/* .main-form-wrap .tab-content>.tab-pane {padding-top: 50px;} */
+.search-engine-home {position: relative; padding: 40px 40px 100px 40px;}
+/* .nav-tabs {flex-wrap: wrap; align-items: center; justify-content: center; } */
+.main-home-banner .react-tabs__tab-list {margin-bottom: 0; display: flex; align-items: flex-end; list-style: none; padding: 0;  }
+.main-home-banner .react-tabs__tab {background-color: #6c7578; color: white; margin-right: 1px; padding: 10px 15px; cursor: pointer; transition: 0.3s;border-radius: 8px 8px 0px 0px;-webkit-border-radius: 8px 8px 0px 0px; }
+.main-home-banner .react-tabs__tab--selected {background-color:var(--color-red); color: white; }
+.main-home-banner .nav-tabs .nav-link:focus,.main-home-banner .nav-tabs .nav-link:hover {border-color: transparent;background-color: var(--color-red);color: #fff;}
+.main-home-banner .nav-tabs .nav-link.active {background-color: var(--color-red);}
+
+.search-hotel-form .field-section i {position: absolute;top: 50%;left: 15px;transform: translateY(-50%);font-size: 15px;color: #01b7f2;z-index: 100;}
+.search-hotel-form label {display: block;font-size: 12px;line-height: 1;font-weight: 600;color: #6c7578;letter-spacing: 1px;text-transform: uppercase;margin-bottom: 17px;}
+.search-hotel-form .field-section {position: relative;}
+.search-hotel-form {display: flex;align-items: flex-end;justify-content: space-between;flex-wrap: wrap;}
+.search-hotel-form > div {position: relative;flex: 1 1 auto;padding-right: 10px;margin-bottom: 25px;}
+.search-hotel-form > div.check-in-out-wrap {max-width: 330px;}
+.search-hotel-form .field-section .form-control{display: block;font-size: 16px;font-weight: 500;line-height: 1.5; color: #1e2325;background-color: transparent;padding: 14px 20px;padding-left: 35px;border: 1px solid #dce5e8;border-radius: 4px;height: auto;}
+.search-hotel-form > div.guest-wrap .form-control {cursor: pointer;}
+.search-hotel-form .check-in-out-wrap .field-sections{position: relative;border: 1px solid #dce5e8; border-radius: 4px;}
+.search-hotel-form > div:last-child {padding: 0;width: 100%;text-align: center;}
+.search-hotel-form .guest-wrap .guest-dropdown-info {position: absolute;left: 0;top: 100%;border: 1px solid #dce5e8;border-radius: 4px;background-color: #fff;padding: 20px 30px;margin-top: -1px;box-shadow: 0px 10px 20px rgb(30 35 37 / 10%);z-index: 100; display: none;  }
+.search-hotel-form .guest-wrap .qty-field {display: flex;align-items: center;justify-content: space-between; margin-bottom: 15px;}
+.search-hotel-form .guest-wrap .guest-description {font-size: 14px; margin-top: 15px;margin-bottom: 0;}
+.search-hotel-form .check-in-out-wrap > div .field-section, .search-hotel-form .check-in-out-wrap > div .form-label {flex: 1 1 50%;max-width: 50%;}
+.search-hotel-form .field-section .date-value.form-control {border: 0;}
+.search-hotel-form .check-in-out-wrap > div {display: flex;align-items: center;}
+.search-hotel-form .check-in-out-wrap .field-sections .date-in:after {content: '';display: block;position: absolute;width: 1px;right: 0;top: 9px;bottom: 9px;background-color: #dce5e8;}
+.search-engine-home .form-submit .submit-btn {border: 0; outline: none; background-color: var(--color-red); color: white; transition: 0.3s;font-size: 20px;padding: 10px 30px;}
+
+.search-hotel-form > .guest-wrap {padding-right: 0;}
+.mystyle1 {display: block !important;}
+
+/* .main-form-wrap .bottomimg {width: 100%; position: relative; height: 150px; overflow: hidden;  } */
+/* .main-form-wrap .bottomimg img { width: 100%; height: auto; opacity: 0.2; margin-top:0px;    } */
 
 
 
 /* .container {display: flex; align-items: center; justify-content: center; height: 50vh;}
 .home-banner .container {height: auto; display: block;} */
-.footer {background-color: darkgray; padding: 5px 20px;}
+.footer {background-color: darkgray; padding: 5px 20px; height: var(--footer-height);}
 .footer .copyright {text-align: center;}
 .footer .copyright p {font-size: 14px; margin-bottom: 0;}

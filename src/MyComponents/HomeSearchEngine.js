@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 
-const SearchEngine = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+export class HomeSearchEngine extends PureComponent {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
-export default SearchEngine
-
+export default HomeSearchEngine
