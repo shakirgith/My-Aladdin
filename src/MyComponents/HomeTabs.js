@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Toggle from 'react-toggle';
 // import HomeSearchEngine from '../../MyComponents/HomeSearchEngine';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import { resetIdCounter } from 'react-tabs';
@@ -7,10 +8,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 const HomeTabings = () => {
     const [tabIndex, setTabIndex] = useState(1);
 
-    function myFunction() {
-        var element = document.getElementById("mystyle");
-        element.classList.toggle("mystyle1");
-      }
+    // function myFunction() {
+    //     var element = document.getElementById("mystyle");
+    //     element.classList.toggle("mystyle1");
+    //   }
 
     // function myFunction() {
     //     var x = document.getElementById("mystyle");
