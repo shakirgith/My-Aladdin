@@ -1,32 +1,30 @@
-import React, { useState } from 'react';
-import Toggle from 'react-toggle';
-// import HomeSearchEngine from '../../MyComponents/HomeSearchEngine';
+import React, { useState, mobiscroll } from 'react';
+// import Toggle from 'react-toggle';
+// import HideAndShowDivOnClick from './HomeSearchEngine';
+// import SourceDatepicker from './SourceDatepicker';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-// import { resetIdCounter } from 'react-tabs';
 
+
+import '../assets/css/mobiscroll.javascript.min.css';
+import '../assets/js/mobiscroll.javascript.min.js';
+import '../assets/js/main.js';
+
+
+
+function guestdropbtn() {
+    var x = document.getElementById("guestdrop");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  
 
 const HomeTabings = () => {
     const [tabIndex, setTabIndex] = useState(1);
 
-    // function myFunction() {
-    //     var element = document.getElementById("mystyle");
-    //     element.classList.toggle("mystyle1");
-    //   }
-
-    // function myFunction() {
-    //     var x = document.getElementById("mystyle");
-    //     if (x.style.display === "block") {
-    //       x.style.display = "none";
-    //     } else {
-    //       x.style.display = "block";
-    //     }
-    //   }
-
-    // document.getElementById("RootNode").onclick = function(){
-    //     var element = document.getElementById("myDIV");
-    //     element.classList.toggle("mystyle");
-
-    // }
 
 
       
@@ -44,6 +42,8 @@ const HomeTabings = () => {
 
                     <TabPanel>
                         <h2>Flight</h2>
+                        {/* <HideAndShowDivOnClick /> */}
+                        {/* <SourceDatepicker /> */}
                     </TabPanel>
 
                     <TabPanel>
@@ -65,15 +65,41 @@ const HomeTabings = () => {
                         </div>
 
                         <div class="field-sections">
-                            <div class="field-section date-in">
+
+                            
+                        <div mbsc-page class="demo-date-range">
+                        <div id="demo-start-end"></div>
+
+
+                        <div class="mbsc-grid mbsc-no-padding">
+                        <div class="mbsc-row">
+                            <div class="mbsc-col-6">
+                                <label>
+                                    Start
+                                    <input id="demo-start" mbsc-input data-input-style="outline" data-label-style="stacked" placeholder="MM/DD/YYYY" />
+                                </label>
+                            </div>
+                            <div class="mbsc-col-6">
+                                <label>
+                                    End
+                                    <input id="demo-end" mbsc-input data-input-style="outline" data-label-style="stacked" placeholder="MM/DD/YYYY" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+                            {/* <div class="field-section date-in">
                                 <i class="icofont-calendar"></i>
-                                <span class="date-value form-control">MM/DD/YYYY</span>
+                                <span class="date-value form-control">MM/DD/YYYY</span> 
                             </div>
 
                             <div class="field-section date-out">
                                 <i class="icofont-calendar"></i>
                                 <span class="date-value form-control">MM/DD/YYYY</span>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -82,10 +108,10 @@ const HomeTabings = () => {
 
                         <div class="field-section">
                         <i class="icofont-user-alt-7"></i>
-                            <span onClick="myFunction();" class="guest-value form-control">Who's going?</span>
+                            <span onClick={guestdropbtn} class="guest-value form-control">Who's going?</span>
                         </div>
 
-                         <div id="mystyle" class="guest-dropdown-info">
+                         <div id="guestdrop" class="guest-dropdown-info" style={{display:`none`}}>
                             <div class="guest-qty-section">
                                 <div class="room-qty qty-field">
                                     <div class="label-wrap">
@@ -94,9 +120,9 @@ const HomeTabings = () => {
                                     </div>
 
                                     <div class="count-wrap">
-                                        <i class="fas fa-minus"></i>
+                                        <i class="icofont-minus"></i>
                                         <input type="text" name="rooms" class="count-value" min="1" value="1" />
-                                        <i class="fas fa-plus"></i>
+                                        <i class="icofont-plus"></i>
                                     </div>
                                 </div>
 
@@ -107,9 +133,9 @@ const HomeTabings = () => {
                                     </div>
 
                                     <div class="count-wrap">
-                                        <i class="fas fa-minus"></i>
+                                        <i class="icofont-minus"></i>
                                         <input type="text" name="adults" class="count-value" min="1" value="1" />
-                                        <i class="fas fa-plus"></i>
+                                        <i class="icofont-plus"></i>
                                     </div>
                                 </div>
 
@@ -120,9 +146,9 @@ const HomeTabings = () => {
                                     </div>
 
                                     <div class="count-wrap">
-                                        <i class="fas fa-minus"></i>
+                                        <i class="icofont-minus"></i>
                                         <input type="text" name="kids" class="count-value" min="0" value="0" />
-                                        <i class="fas fa-plus"></i>									
+                                        <i class="icofont-plus"></i>								
                                     </div>
                                     <input type="hidden" name="child_ages[]" value="2" />
                                 </div>
@@ -138,6 +164,9 @@ const HomeTabings = () => {
             
                                 
                             </form> 
+                    </TabPanel>
+                    <TabPanel>
+                        <h2>Flight + Hotel</h2>
                     </TabPanel>
                     </div>
               </div>	

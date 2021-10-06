@@ -28,6 +28,25 @@
 //     }
 // }
 
+window.isMbscDemo = true;
+
+mobiscroll.setOptions({
+    locale: mobiscroll.localeEn,  // Specify language like: locale: mobiscroll.localePl or omit setting to use default
+    theme: 'ios',                 // Specify theme like: theme: 'ios' or omit setting to use default
+    themeVariant: 'light'         // More info about themeVariant: https://docs.mobiscroll.com/5-10-1/javascript/range#opt-themeVariant
+});
+
+mobiscroll.datepicker('#demo-one-input', {
+    controls: ['calendar'],       // More info about controls: https://docs.mobiscroll.com/5-10-1/javascript/range#opt-controls
+    select: 'range'               // More info about select: https://docs.mobiscroll.com/5-10-1/javascript/range#methods-select
+}); 
+
+mobiscroll.datepicker('#demo-start-end', {
+    controls: ['calendar'],       // More info about controls: https://docs.mobiscroll.com/5-10-1/javascript/range#opt-controls
+    select: 'range',              // More info about select: https://docs.mobiscroll.com/5-10-1/javascript/range#methods-select
+    startInput: '#demo-start',    // More info about startInput: https://docs.mobiscroll.com/5-10-1/javascript/range#opt-startInput
+    endInput: '#demo-end'         // More info about endInput: https://docs.mobiscroll.com/5-10-1/javascript/range#opt-endInput
+});
 
 
   
