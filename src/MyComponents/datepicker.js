@@ -5,18 +5,7 @@ import '../assets/js/mobiscroll.javascript.min.js';
 
 const RangeDatePicker = () => {
 
-    // mobiscroll.setOptions({
-    //     locale: mobiscroll.localeEn,  
-    //     theme: 'ios',              
-    //     themeVariant: 'light' 
-    // });
-    
-    //  mobiscroll.datepicker('#demo-start-end', {
-    //     controls: ['calendar'],  
-    //     select: 'range',            
-    //     startInput: '#demo-start', 
-    //     endInput: '#demo-end'  
-    // });
+
 
     return (
 

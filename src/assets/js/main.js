@@ -28,19 +28,19 @@
 //     }
 // }
 
-// window.isMbscDemo = true;
-//  mobiscroll.setOptions({
-//     locale: mobiscroll.localeEn,  
-//     theme: 'ios',              
-//     themeVariant: 'light' 
-// });
+window.isMbscDemo = true;
+ mobiscroll.setOptions({
+    locale: mobiscroll.localeEn,  
+    theme: 'ios',              
+    themeVariant: 'light' 
+});
 
-//  mobiscroll.datepicker('#demo-start-end', {
-//     controls: ['calendar'],  
-//     select: 'range',            
-//     startInput: '#demo-start', 
-//     endInput: '#demo-end'  
-// });
+ mobiscroll.datepicker('#demo-start-end', {
+    controls: ['calendar'],  
+    select: 'range',            
+    startInput: '#demo-start', 
+    endInput: '#demo-end'  
+});
 
 
   
