@@ -10,6 +10,9 @@ import PageNotFound from './MyComponents/Pages/Not-found';
 import Modal from './MyComponents/Model/Register';
 // import Button from 'react-bootstrap/Button';
 
+
+
+
 function App() {
   return (
     <Router>
@@ -23,6 +26,7 @@ function App() {
         {/* <Route path="/not-found" /> */}
       </Switch>
       <Modal />
+      
      
       <Footer />
     </Router>
