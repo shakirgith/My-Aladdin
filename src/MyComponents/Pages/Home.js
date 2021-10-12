@@ -35,7 +35,7 @@ const Home = () => {
         <div className="container">
 
           <div className="section-title">
-              <h2>Destinations</h2>
+              <h2>Top Destinations</h2>
               <p>Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
           </div>
 
