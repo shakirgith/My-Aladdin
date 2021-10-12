@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeTabings from '../../MyComponents/HomeTabs';
 import HomeDestOwlCarousel from '../DestHome_OwlCarousel';
-import MainBannerImage from '../../assets/images/hills_mountains.jpeg';
+import MainBannerImage from '../../assets/images/xbg_1.jpg.pagespeed.ic.GQT90DL5zP.webp';
 
 
 
@@ -31,6 +31,8 @@ const Home = () => {
     </section>
 
 
+
+
     <section id="feature" className="feature-section">
         <div className="container">
 
@@ -42,6 +44,46 @@ const Home = () => {
           <HomeDestOwlCarousel />
           </div>
      </section>
+
+
+     <section id="best-features" class="banner-padding black-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="icofont-dollar"></i></span>
+                            <h3>Best Price Guarantee</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div>
+                   </div>
+                   
+                   <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="icofont-lock"></i></span>
+                            <h3>Safe and Secure</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div>
+                   </div>
+                   
+                   <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="icofont-thumbs-up"></i></span>
+                            <h3>Best Travel Agents</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div>
+                   </div>
+                   
+                   <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="icofont-navigation-menu"></i></span>
+                            <h3>Travel Guidelines</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div>
+                   </div>
+
+                </div>
+            </div>
+        </section>
 
 	</main>
   );
