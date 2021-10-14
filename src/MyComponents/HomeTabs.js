@@ -33,6 +33,7 @@ const HomeTabings = () => {
 
                     <TabPanel>
                         <h2>Flight</h2>
+                        <p>coming soon</p>
                         {/* <HideAndShowDivOnClick /> */}
                         {/* <SourceDatepicker /> */}
                        
@@ -142,6 +143,7 @@ const HomeTabings = () => {
                     </TabPanel>
                     <TabPanel>
                         <h2>Flight + Hotel</h2>
+                        <p>coming soon</p>
                     </TabPanel>
                     </div>
               </div>	

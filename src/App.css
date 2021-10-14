@@ -116,7 +116,7 @@ body {font-family: 'Poppins', sans-serif !important;color: #121212;}
 .navbar-expand-lg .navbar-nav .nav-item {padding-right: .5rem;padding-left: .5rem;}
 .navbar-expand-lg .navbar-nav .nav-item a { text-decoration: none; color: var(--color-black); }
 .navbar-expand-lg .navbar-nav .nav-item a.active {color: rgb(255, 0, 0); text-decoration: none;}
-
+p {font-size: 16px;line-height: 1.4;font-weight: 300; white-space: normal;}
 
 .rightmenu {display: flex;}
 
@@ -237,27 +237,30 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 .bg-gradient2 {background: rgb(2,0,36);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,102,0,0.6) 0%, rgba(85,0,255,0.6) 100%); height: 100%;}
 
 
+.my-full-grid { display: flex;flex-wrap: wrap;}
+.my-col-1 {margin-left: 33%; padding: 3rem 2rem 0rem 0; }
 
 
+#best-features.black-features img {max-width: 100%;height: 570px; }   
 
 
 /************* BLACK-FEATURES *************/
 
 #best-features.black-features{
-	background:#232323;
+	background:#01b7f2;
 	color:white;
-  padding: 60px 0;
+  padding:0;
 }
 
 
 #best-features.black-features .b-feature-block i{
-	border:3px solid #faa61a;
-	color:#faa61a;
+	border:3px solid #fff;
+	color:#fff;
 }
 
 #best-features.black-features .b-feature-block:hover i{
-	background:#faa61a;
-	color:white;
+	background:#fff;
+	color:#000;
 }
 
 #best-features.black-features .b-feature-block p{
@@ -289,7 +292,7 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 /************* ORANGE FEATURES ************/
 
 #best-features.orange-features{
-	background:#faa61a;
+	background:#7544d7;
 	color:#000;
 }
 
@@ -310,6 +313,7 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 
 .b-feature-block{
 	text-align:center;
+  margin-bottom: 30px;
 }
 
 .b-feature-block i{
@@ -320,11 +324,12 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 	font-size:35px;
 	margin-bottom:28px;
 	transition:.4s;
+  display: inline-block;
 }
 
 .b-feature-block h3{
-	font-size:22px;
-	font-weight:bold;
+	font-size:20px;
+	font-weight:600;
 	margin-bottom:6px;
 }
 

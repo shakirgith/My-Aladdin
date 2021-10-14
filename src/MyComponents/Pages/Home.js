@@ -47,9 +47,13 @@ const Home = () => {
 
 
      <section id="best-features" class="banner-padding black-features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
+            <div class="my-full-grid">
+             
+                <div class="col-6">
+                <div class="my-col-1">
+                
+                   <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12">
                         <div class="b-feature-block">
                             <span><i class="icofont-dollar"></i></span>
                             <h3>Best Price Guarantee</h3>
@@ -57,7 +61,7 @@ const Home = () => {
                         </div>
                    </div>
                    
-                   <div class="col-md-6 col-lg-3">
+                   <div class="col-md-6 col-lg-6 col-xs-12">
                         <div class="b-feature-block">
                             <span><i class="icofont-lock"></i></span>
                             <h3>Safe and Secure</h3>
@@ -65,7 +69,7 @@ const Home = () => {
                         </div>
                    </div>
                    
-                   <div class="col-md-6 col-lg-3">
+                   <div class="col-md-6 col-lg-6 col-xs-12">
                         <div class="b-feature-block">
                             <span><i class="icofont-thumbs-up"></i></span>
                             <h3>Best Travel Agents</h3>
@@ -73,15 +77,27 @@ const Home = () => {
                         </div>
                    </div>
                    
-                   <div class="col-md-6 col-lg-3">
+                   <div class="col-md-6 col-lg-6 col-xs-12">
                         <div class="b-feature-block">
                             <span><i class="icofont-navigation-menu"></i></span>
                             <h3>Travel Guidelines</h3>
                             <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
                         </div>
                    </div>
+                   </div>
+                   </div>
+              </div>
 
-                </div>
+                   <div class="col-6">
+                   <img src={"https://travelo.c-themes.com/wp-content/uploads/2019/09/drone-capture-bg.jpg"} alt="trusted" />
+                     
+                   {/* <img src={require("https://travelo.c-themes.com/wp-content/uploads/2019/09/drone-capture-bg.jpg").default} alt="trusted" /> */}
+                   </div>
+
+
+
+
+               
             </div>
         </section>
 
