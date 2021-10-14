@@ -1,4 +1,4 @@
-//Owl Carousel Libraries and Module
+  //Owl Carousel Libraries and Module
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
