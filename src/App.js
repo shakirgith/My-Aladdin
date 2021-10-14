@@ -7,7 +7,7 @@ import About from './MyComponents/Pages/About';
 import Contact from './MyComponents/Pages/Contact';
 import Footer from './MyComponents/Layout/Footer';
 import PageNotFound from './MyComponents/Pages/Not-found';
-import Modal from './MyComponents/Model/Register';
+import Registration from './MyComponents/Model/Register';
 // import Button from 'react-bootstrap/Button';
 
 
@@ -25,7 +25,7 @@ function App() {
 
         {/* <Route path="/not-found" /> */}
       </Switch>
-      <Modal />
+      <Registration />
       
      
       <Footer />

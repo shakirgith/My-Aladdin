@@ -340,8 +340,19 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 .b-feature-block:hover i {
 	transform:rotateY(180deg);
 }
+.register .modal-body {padding: 2rem;}
+.register .form-control {font-weight: 300; border: 0; border-radius: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.25); transition: 0.3s; padding-left: 0;}
+.register .form-control:focus {box-shadow: none; border: 0; border-bottom: 1px solid var(--color-red);}
 
 
+
+
+.register .react-tabs__tab-list {display:flex; padding: 0; list-style: none; margin: 0;}
+.register .react-tabs__tab {cursor: pointer; text-decoration:none; text-transform: uppercase; border: 0; outline: none; margin-right: 10px; transition: 0.3s;}
+.register .react-tabs__tab--selected {color: var(--color-red);}
+.register .react-tabs__tab--selected:last-child {margin-right: 0;}
+.register h4  {font-size: 18px; margin-bottom: 30px; text-align: center;}
+.not-resistered {text-align: center;padding-top: 20px;}
 
 
 .main-footer{font-size:16px;font-weight:500;line-height:30px; background-color: #2D3976; padding:0;}
