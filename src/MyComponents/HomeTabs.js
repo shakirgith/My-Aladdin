@@ -17,7 +17,10 @@ function guestdropbtn() {
 
 
 const HomeTabings = () => {
+
+
     const [tabIndex, setTabIndex] = useState(1);
+
 
     return (
       
