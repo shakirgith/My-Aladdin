@@ -47,6 +47,11 @@
 // 	document.getElementById('top-alert').classList.remove('d-none');
 // }
 
+// mobiscroll.datepicker('#range', {
+//     select: 'range',
+//     startInput: '#start',
+//     endInput: '#end'
+// });
 
 
   

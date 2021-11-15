@@ -161,7 +161,7 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 .main-home-banner .nav-tabs .nav-link:focus,.main-home-banner .nav-tabs .nav-link:hover {border-color: transparent;background-color: var(--color-red);color: #fff;}
 .main-home-banner .nav-tabs .nav-link.active {background-color: var(--color-red);}
 
-.search-hotel-form .field-section i {position: absolute;top: 50%;left: 15px;transform: translateY(-50%);font-size: 15px;color: #01b7f2;z-index: 100;}
+.search-hotel-form .field-section i {position: absolute;top: 50%;left: 15px;transform: translateY(-50%);font-size: 15px;color: #ee342e;z-index: 100;}
 .search-hotel-form label {display: block;font-size: 12px;line-height: 1;font-weight: 600;color: #6c7578;letter-spacing: 1px;text-transform: uppercase;margin-bottom: 17px;}
 .search-hotel-form .field-section {position: relative;}
 .search-hotel-form {display: flex;align-items: flex-end;justify-content: space-between;flex-wrap: wrap;}
@@ -179,6 +179,9 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 .search-hotel-form .check-in-out-wrap > div {display: flex;align-items: center;}
 .search-hotel-form .check-in-out-wrap .field-sections .date-in:after {content: '';display: block;position: absolute;width: 1px;right: 0;top: 9px;bottom: 9px;background-color: #dce5e8;}
 .search-engine-home .form-submit .submit-btn {border: 0; outline: none; background-color: var(--color-red); color: white; transition: 0.3s;font-size: 20px;padding: 10px 30px;}
+.react-datepicker__input-container input {border: 0; outline: none; background-color: transparent;}
+.react-datepicker__close-icon::after {background-color: transparent !important; color:#999 !important; font-size: 16px !important;}
+
 
 .search-hotel-form > .guest-wrap {padding-right: 0;}
 
@@ -242,6 +245,73 @@ main,#main { min-height: calc(100vh - var(--min-height));}
 
 
 #best-features.black-features img {max-width: 100%;height: 570px; }   
+.interearbg {background-color: #e1e1e1; padding-top: 30px;}
+
+
+.result-page {position: relative; margin: 0; padding: 0;}
+
+.modified-search {background-color:#222d7a; padding: 30px; margin-bottom: 30px; border-radius: 8px; -webkit-border-radius: 8px;}
+.modified-search .search-hotel-form .field-section .form-control {background-color: #fff; border:0 !important;}
+.modified-search .check-in-out-wrap .field-sections { border:0 !important;}
+.modified-search .date-in .form-control {border-radius:4px 0 0 4px;}
+.modified-search .date-out .form-control {border-radius:0 4px 4px 0;}
+.modified-search .search-hotel-form > .guest-wrap {padding-right: 10px;}
+.modified-search .search-hotel-form > div:last-child {flex: 0 0 auto; padding: 0; width: auto;}
+.modified-search .form-submit {background: rgb(2,0,36);background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,102,0,0.8) 0%, rgba(85,0,255,0.8) 100%); height: 54px; border-radius: 4px; outline: 0; border: 0; color: #fff !important;     display: flex;align-items: center;}
+.modified-search .form-submit .submit-btn,.modified-search .form-label {color: #fff;}
+.modified-search .form-submit .submit-btn:hover,  .modified-search .form-submit .submit-btn:focus {box-shadow: none; outline: none; }
+
+.modified-search .headtop {display: flex; align-items: center; }
+.modified-search .result-txt {font-size: 16px; font-weight: normal; padding: 0; color: #fff; font-weight: 300;  }
+.modified-search .result-txt strong {font-weight: 600; color:#f7b944;   }
+.search-again-btn {outline: none; border: 0; background-color: rgba(255, 255, 255, 0.05); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 8px; -webkit-border-radius: 8px;    margin-right: 0; margin-left: auto; }
+.search-again-btn:hover {border: 0; text-decoration: none; color: #fff;}
+
+
+
+
+.filter-section {position: relative; background-color: #fff; padding: 0 0 30px;  border-radius: 8px; -webkit-border-radius: 8px;}
+.filter-section h2 {font-size: 24px; font-weight: 500; padding: 15px 15px 5px;}
+.filter-section .accordion-button {padding: 0;}
+.filter-section .accordion-item {border-left: 0; border-right: 0;}
+.filter-section .accordion-item:first-of-type,.filter-section .accordion-item:last-of-type {border-radius: 0; }
+.filter-section .accordion-header {padding: 10px 15px}
+.filter-section .accordion-button:hover,.filter-section .accordion-button:focus,.filter-section .accordion-button:not(.collapsed) {box-shadow: none; outline: none; background-color: transparent;}
+
+
+
+.filter-section .rating {list-style: none; padding: 0; display: flex;font-size: 16px;}
+.filter-section .rating li {margin-right: 5px; }
+.filter-section .rating i {color:#f7a940;}
+.filter-section .rating .gray i {color:#cccccc; font-size: 16px;}
+.filter-section .rating .gray {color:#5f5f5f; font-size: 12px;}
+.filter-section .rating a {color:#5f5f5f; font-size: 14px; text-decoration: none; transition: 0.3s;}
+.filter-section .rating a:hover {color:#f7a83f; text-decoration: none;}
+.filter-section .price {font-size: 24px; font-weight: 400; line-height: normal; color:#121212;margin-bottom: 25px;}
+
+
+.filter-section ul {list-style: none; padding: 0;}
+.filter-section .form-check label {font-weight: 300;}
+.filter-section .form-check-input[type=checkbox] {border-radius: 0;border-color: rgb(0 0 0 / 90%);}
+.filter-section .form-check-input:checked {background-image: none; background-color: transparent;border-color: rgb(0 0 0 / 99%);}
+.filter-section .form-check-input:checked[type=checkbox]::after  {content: "\eed8";font-family: IcoFont; position: absolute;margin-top: -6px;margin-left: -1px;}
+.filter-section .form-check-input:focus {border-color: rgb(0 0 0 / 99%);box-shadow: none;}
+
+
+/* .filter {display:flex; list-style: none; align-items: center; justify-content: space-between; margin-bottom: 20px;}
+.filter .showresult {font-size: 1rem;}
+.filter .showresult span {color: #f7a83f;}
+.sortby {display: flex; align-items: center;justify-content: flex-end;}
+.sortby span {margin-right: 10px;}
+.sortby .form-control {display: inline; width: 180px;border-radius: 0; font-size: 14px;}
+.sortby select option:first-child {color: rgb(33 37 41 / 50%);}
+.sortby .form-control:focus {outline: none; box-shadow: none; border-color: #daa35f;}
+
+.selectdiv {position: relative;float: left;}
+.selectdiv select {-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.selectdiv:after {content: "\f270"; font-family: bootstrap-icons; right: 11px;top: 0px;;padding: 10px 0px 0px 8px;position: absolute;pointer-events: none;} */
+
+
 
 
 /************* BLACK-FEATURES *************/

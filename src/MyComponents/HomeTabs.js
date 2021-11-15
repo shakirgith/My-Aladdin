@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import HideAndShowDivOnClick from './HomeSearchEngine';
 // import SourceDatepicker from './SourceDatepicker';
-// import RangeDatePicker from './datepicker';
+import RangeDatePicker from './datepicker';
 import Click from './adults';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -44,7 +44,7 @@ const HomeTabings = () => {
                     </TabPanel>
 
                     <TabPanel>
-                    <form id="hotel-form" method="get" className="search-hotel-form">
+                    <form id="hotel-form" method="get" className="search-hotel-form" action="">
 
                     <div class="direction-wrap">
                         <label class="form-label">Where</label>
@@ -65,9 +65,11 @@ const HomeTabings = () => {
 
                           
                        
-                            {/* <RangeDatePicker/> */}
+                            <RangeDatePicker/>
 
-                            <div class="field-section date-in">
+
+
+                            {/* <div class="field-section date-in">
                                 <i class="icofont-calendar"></i>
                                 <span class="date-value form-control">MM/DD/YYYY</span> 
                             </div>
@@ -75,7 +77,7 @@ const HomeTabings = () => {
                             <div class="field-section date-out">
                                 <i class="icofont-calendar"></i>
                                 <span class="date-value form-control">MM/DD/YYYY</span>
-                            </div> 
+                            </div>  */}
 
 
                         </div>

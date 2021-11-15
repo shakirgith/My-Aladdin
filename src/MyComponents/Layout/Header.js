@@ -45,6 +45,9 @@ return (
 					<NavLink exact activeClassName="active" to='/about'>About Us</NavLink>
 				</li>
 				<li className="nav-item">
+				<NavLink exact activeClassName="active" to='/result-view'>Demo Result List</NavLink>
+				</li>
+				<li className="nav-item">
 				<NavLink exact activeClassName="active" to='/contact'>Contact Us</NavLink>
 				</li>
 				</ul> 
