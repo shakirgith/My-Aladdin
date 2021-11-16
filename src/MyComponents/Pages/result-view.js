@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import RangeDatePicker from '../../MyComponents/datepicker';
 import Click from '../../MyComponents/adults';
+// import PriceRangeSlider from '../../MyComponents/PriceRange-slider';
+
 
 const ResultListView = () => {
+
+
+
 
 
     function guestdropbtn() {
@@ -25,6 +30,10 @@ const ResultListView = () => {
             output.innerHTML = this.value;
             } 
         }
+
+
+        
+   
 
 
 
@@ -96,6 +105,18 @@ return (
 
 
                 <div class="row">
+                        <div className="sorting">
+                            <h1><span>Mumbai</span> <i class="icofont-long-arrow-right"></i> 140 Hotel Found</h1>
+                            <div className="sort-select">
+                                <label for="sort">Sort by:</label>
+                                <select name="sort" id="sort">
+                                    <option value="low">Sort By</option>
+                                    <option value="low">Low To High</option>
+                                    <option value="high">High To Low</option>
+                                </select>
+                            </div>
+                        </div>
+
                     <div class="col-md-3">
                         <div class="filter-section">
                             <h2 class="">Filter</h2>
@@ -112,10 +133,16 @@ return (
                                     <div class="accordion-body">
                                         <ul>
                                             <li>
-                                            <div class="slidecontainer">
+                                                  <div class="slidecontainer">
                                                 <input type="range" min="500" max="10000" value="1999" class="pslider" id="priceRange" />
                                                 <p><i class="icofont-rupee"></i> <span id="valuedemo"></span></p>
                                                 </div>
+                                                {/* <PriceRangeSlider/>    */}
+
+
+                                                {/* <label for="customRange1" class="form-label">Example range</label> 
+                                                <input type="range" class="form-range" min="500" max="10000" value="1999" id="priceRanges"></input>
+                                                <p><i class="icofont-rupee"></i> <span id="valuedemoss"></span></p> */}
                                             </li>
                                         </ul>
                                     </div>
@@ -229,37 +256,180 @@ return (
 
                     <div class="col-md-9">
                         <div className="right-result-wrap">
-                            <div class="list-item-block">
-                                <div class="firstblock">
-                                    <div class="profile-img">
+
+                            <div className="list-item-block">
+                                <div className="firstblock">
+                                    <div className="profile-img">
                                         <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
                                     </div>
                                 </div>
-
-                                <div class="secondblock">
-                                    <div class="cntnt-block">
-                                        <div class=""></div>
-                                        <h2>Hotel Royal Orchid Jaipur</h2>
-
-                                        <div class="review-rating">
-                                            <div class="five-stars-container">
-                                                <span class="five-stars"></span>
+                                <div className="secondblock">
+                                    <div className="cntnt-block">
+                                        <h4>ITC Rajputana, A Luxury Collection Hotel</h4>
+                                            <p><i class="icofont-location-pin"></i> Bani Park, Jaipur</p>
+                                            <ul className="include-list">
+                                                <li><i class="icofont-tea"></i> Free Breakfast</li>
+                                                <li><i className="icofont-wifi"></i> Free WiFi</li>
+                                                <li><i class="icofont-swimmer"></i> Swimming pool</li>
+                                            </ul>
+                                            <div className="review-rating">
+                                                <i class="icofont-star"></i> 
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star gray"></i>
+                                                <span className="review-nums">
+                                                <a href="#">
+                                                    <span className="ratingbeige"><strong>7.9/10</strong> (Good)</span>
+                                                    839 Reviews
+                                                    </a>
+                                                </span>
                                             </div>
-                                            <span class="review-nums">2 reviews</span>
+                                    </div>
+                                </div>
+                                <div className="thirdblock">
+                                    <div className="price-block">
+                                        <div className="price"><i className="icofont-rupee"></i>6489</div>
+                                        <span className="taxes">+ <i className="icofont-rupee"></i> 1,608 taxes & fees <br />Per Night</span>
+                                        <p>Free cancellation eligable </p>
+                                        <div className="viewrooms">
+                                            <a href="#" className="view-btn">Choose Rooms</a>
                                         </div>
-                                        <p>Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
                                     </div>
                                 </div>
-                                <div class="thirdblock">
-                                    <div class="price-block">
-                                            asdfasdfasdfasd
-                                    </div>
-                                </div>
-                                
-                                
                             </div> 
                             {/* end list-item-block */}
-                            
+
+                            <div className="list-item-block">
+                                <div className="firstblock">
+                                    <div className="profile-img">
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                    </div>
+                                </div>
+                                <div className="secondblock">
+                                    <div className="cntnt-block">
+                                        <h4>ITC Rajputana, A Luxury Collection Hotel</h4>
+                                            <p><i class="icofont-location-pin"></i> Bani Park, Jaipur</p>
+                                            <ul className="include-list">
+                                                <li><i class="icofont-tea"></i> Free Breakfast</li>
+                                                <li><i className="icofont-wifi"></i> Free WiFi</li>
+                                                <li><i class="icofont-swimmer"></i> Swimming pool</li>
+                                            </ul>
+                                            <div className="review-rating">
+                                                <i class="icofont-star"></i> 
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star gray"></i>
+                                                <span className="review-nums">
+                                                <a href="#">
+                                                    <span className="ratingbeige"><strong>7.9/10</strong> (Good)</span>
+                                                    839 Reviews
+                                                    </a>
+                                                </span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="thirdblock">
+                                    <div className="price-block">
+                                        <div className="price"><i className="icofont-rupee"></i>6489</div>
+                                        <span className="taxes">+ <i className="icofont-rupee"></i> 1,608 taxes & fees <br />Per Night</span>
+                                        <p>Free cancellation eligable </p>
+                                        <div className="viewrooms">
+                                            <a href="#" className="view-btn">Choose Rooms</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            {/* end list-item-block */}
+
+                            <div className="list-item-block">
+                                <div className="firstblock">
+                                    <div className="profile-img">
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                    </div>
+                                </div>
+                                <div className="secondblock">
+                                    <div className="cntnt-block">
+                                        <h4>ITC Rajputana, A Luxury Collection Hotel</h4>
+                                            <p><i class="icofont-location-pin"></i> Bani Park, Jaipur</p>
+                                            <ul className="include-list">
+                                                <li><i class="icofont-tea"></i> Free Breakfast</li>
+                                                <li><i className="icofont-wifi"></i> Free WiFi</li>
+                                                <li><i class="icofont-swimmer"></i> Swimming pool</li>
+                                            </ul>
+                                            <div className="review-rating">
+                                                <i class="icofont-star"></i> 
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star gray"></i>
+                                                <span className="review-nums">
+                                                <a href="#">
+                                                    <span className="ratingbeige"><strong>7.9/10</strong> (Good)</span>
+                                                    839 Reviews
+                                                    </a>
+                                                </span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="thirdblock">
+                                    <div className="price-block">
+                                        <div className="price"><i className="icofont-rupee"></i>6489</div>
+                                        <span className="taxes">+ <i className="icofont-rupee"></i> 1,608 taxes & fees <br />Per Night</span>
+                                        <p>Free cancellation eligable </p>
+                                        <div className="viewrooms">
+                                            <a href="#" className="view-btn">Choose Rooms</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            {/* end list-item-block */}
+
+                            <div className="list-item-block">
+                                <div className="firstblock">
+                                    <div className="profile-img">
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                    </div>
+                                </div>
+                                <div className="secondblock">
+                                    <div className="cntnt-block">
+                                        <h4>ITC Rajputana, A Luxury Collection Hotel</h4>
+                                            <p><i class="icofont-location-pin"></i> Bani Park, Jaipur</p>
+                                            <ul className="include-list">
+                                                <li><i class="icofont-tea"></i> Free Breakfast</li>
+                                                <li><i className="icofont-wifi"></i> Free WiFi</li>
+                                                <li><i class="icofont-swimmer"></i> Swimming pool</li>
+                                            </ul>
+                                            <div className="review-rating">
+                                                <i class="icofont-star"></i> 
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star"></i>
+                                                <i class="icofont-star gray"></i>
+                                                <span className="review-nums">
+                                                <a href="#">
+                                                    <span className="ratingbeige"><strong>7.9/10</strong> (Good)</span>
+                                                    839 Reviews
+                                                    </a>
+                                                </span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="thirdblock">
+                                    <div className="price-block">
+                                        <div className="price"><i className="icofont-rupee"></i>6489</div>
+                                        <span className="taxes">+ <i className="icofont-rupee"></i> 1,608 taxes & fees <br />Per Night</span>
+                                        <p>Free cancellation eligable </p>
+                                        <div className="viewrooms">
+                                            <a href="#" className="view-btn">Choose Rooms</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            {/* end list-item-block */}
+
+                          
 
                         </div> 
                         
