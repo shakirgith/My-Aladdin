@@ -4,6 +4,7 @@ import Click from '../../MyComponents/adults';
 
 const ResultListView = () => {
 
+
     function guestdropbtn() {
         var x = document.getElementById("guestdrop");
         if (x.style.display === "none") {
@@ -12,6 +13,19 @@ const ResultListView = () => {
         x.style.display = "none";
         }
     }
+
+
+        window.onload = () => { 
+            // const = () => {
+            var pslider = document.getElementById("priceRange");
+            var output = document.getElementById("valuedemo");
+            output.innerHTML = pslider.value;
+    
+            pslider.oninput = function() {
+            output.innerHTML = this.value;
+            } 
+        }
+
 
 
 return (
@@ -98,7 +112,10 @@ return (
                                     <div class="accordion-body">
                                         <ul>
                                             <li>
-                                                ssss
+                                            <div class="slidecontainer">
+                                                <input type="range" min="500" max="10000" value="1999" class="pslider" id="priceRange" />
+                                                <p><i class="icofont-rupee"></i> <span id="valuedemo"></span></p>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -106,29 +123,77 @@ return (
                                 </div>
                                 <div class="accordion-item">
                                     <h5 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                         Star Rating
                                     </button>
                                     </h5>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                            <ul class="rating">
-                                                <li><i class="icofont-star"></i></li>
-                                                <li><i class="icofont-star"></i></li>
-                                                <li><i class="icofont-star"></i></li>
-                                                <li><i class="icofont-star"></i></li>
-                                                <li class="gray"><i class="icofont-star"></i></li>
+                                            <ul class="star-rating">
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                        <label class="form-check-label" for="">
+                                                        <i class="icofont-star"></i> 
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        </label>
+                                                    </div>     
+                                                    
+                                                
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                        <label class="form-check-label" for="">
+                                                        <i class="icofont-star"></i> 
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                        <label class="form-check-label" for="">
+                                                        <i class="icofont-star"></i> 
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="gray">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                        <label class="form-check-label" for="">
+                                                        <i class="icofont-star"></i> 
+                                                        <i class="icofont-star"></i>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="gray">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                        <label class="form-check-label" for="">
+                                                        <i class="icofont-star"></i> 
+                                                        </label>
+                                                    </div>
+                                                
+                                                </li>
                                             </ul>
                                          </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h5 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                         Amenities
                                     </button>
                                     </h5>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                             <ul>
                                                 <li> 
@@ -162,11 +227,38 @@ return (
                     </div>
                     {/* end left panel */}
 
-                    <div class="col-md-3">
-                        <div className="section-title">
-                            <h2>Top Destinations</h2>
-                            <p>Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
+                    <div class="col-md-9">
+                        <div className="right-result-wrap">
+                            <div class="list-item-block">
+                                <div class="firstblock">
+                                    <div class="profile-img">
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                    </div>
+                                </div>
 
+                                <div class="secondblock">
+                                    <div class="cntnt-block">
+                                        <div class=""></div>
+                                        <h2>Hotel Royal Orchid Jaipur</h2>
+
+                                        <div class="review-rating">
+                                            <div class="five-stars-container">
+                                                <span class="five-stars"></span>
+                                            </div>
+                                            <span class="review-nums">2 reviews</span>
+                                        </div>
+                                        <p>Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
+                                    </div>
+                                </div>
+                                <div class="thirdblock">
+                                    <div class="price-block">
+                                            asdfasdfasdfasd
+                                    </div>
+                                </div>
+                                
+                                
+                            </div> 
+                            {/* end list-item-block */}
                             
 
                         </div> 
@@ -185,6 +277,7 @@ return (
 
         </section>
      </main>
+
   );
 };
   

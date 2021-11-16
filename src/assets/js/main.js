@@ -28,30 +28,15 @@
 //     }
 // }
 
-// window.isMbscDemo = true;
-//  mobiscroll.setOptions({
-//     locale: mobiscroll.localeEn,  
-//     theme: 'ios',              
-//     themeVariant: 'light' 
-// });
 
-//  mobiscroll.datepicker('#demo-start-end', {
-//     controls: ['calendar'],  
-//     select: 'range',            
-//     startInput: '#demo-start', 
-//     endInput: '#demo-end'  
-// });
+// var slider = document.getElementById("priceRange");
+//     var output = document.getElementById("valuedemo");
+//     output.innerHTML = slider.value;
 
+//     slider.oninput = function() {
+//     output.innerHTML = this.value;
+//     }
 
-// function HideAlert() {
-// 	document.getElementById('top-alert').classList.remove('d-none');
-// }
-
-// mobiscroll.datepicker('#range', {
-//     select: 'range',
-//     startInput: '#start',
-//     endInput: '#end'
-// });
 
 
   

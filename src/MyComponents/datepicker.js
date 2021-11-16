@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-// import '../assets/css/mobiscroll.javascript.min.css';
-// import '../assets/js/mobiscroll.javascript.min.js';
-// import '../assets/js/main.js';
+
 
 const RangeDatePicker = () => {
     // Range Date Picker
