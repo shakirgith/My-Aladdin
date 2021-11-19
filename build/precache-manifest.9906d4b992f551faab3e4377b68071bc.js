@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8292e35e8bc1aacf5823bbda546d53c1",
+    "revision": "e2fd1ee68d6e65cce8af042594b8cf91",
     "url": "/my-aladdin/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-aladdin/static/css/2.ea24616f.chunk.css"
   },
   {
-    "revision": "98fd72acc0f57c4f2588",
+    "revision": "c33cb1098f61de3443ed",
     "url": "/my-aladdin/static/css/main.837b91c3.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-aladdin/static/js/3.1af14248.chunk.js"
   },
   {
-    "revision": "98fd72acc0f57c4f2588",
-    "url": "/my-aladdin/static/js/main.d92a2230.chunk.js"
+    "revision": "c33cb1098f61de3443ed",
+    "url": "/my-aladdin/static/js/main.728460bc.chunk.js"
   },
   {
     "revision": "78edf786f132c10291b9",
