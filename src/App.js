@@ -19,6 +19,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
+        <Route path="/my-aladdin" exact component={Home} />
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
