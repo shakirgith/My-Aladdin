@@ -260,7 +260,7 @@ return (
                             <div className="list-item-block">
                                 <div className="firstblock">
                                     <div className="profile-img">
-                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg")} alt="Hotel Profile Image" /> 
                                     </div>
                                 </div>
                                 <div className="secondblock">
@@ -303,7 +303,7 @@ return (
                             <div className="list-item-block">
                                 <div className="firstblock">
                                     <div className="profile-img">
-                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg")} alt="Hotel Profile Image" /> 
                                     </div>
                                 </div>
                                 <div className="secondblock">
@@ -346,7 +346,7 @@ return (
                             <div className="list-item-block">
                                 <div className="firstblock">
                                     <div className="profile-img">
-                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg")} alt="Hotel Profile Image" /> 
                                     </div>
                                 </div>
                                 <div className="secondblock">
@@ -389,7 +389,7 @@ return (
                             <div className="list-item-block">
                                 <div className="firstblock">
                                     <div className="profile-img">
-                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg").default} alt="Hotel Profile Image" /> 
+                                        <img className="img-fluid" src={require("../../assets/images/destination1.jpeg")} alt="Hotel Profile Image" /> 
                                     </div>
                                 </div>
                                 <div className="secondblock">
