@@ -14,9 +14,9 @@ const Footer = () => {
 			<div className="footer-topbar">
 				<div className="topbar-widget">
 						<div className="trusted-bx">
-							<img src={require("../../assets/images/secure-payment-page-960x300-1.gif").default} alt="trusted" />
-							<img src={require("../../assets/images/trustpilot-energy-reviews.png").default} alt="trusted" />
-							<img src={require("../../assets/images/trustpilot-energy-reviews.png").default} alt="trusted" />
+							<img src={require("../../assets/images/secure-payment-page-960x300-1.gif")} alt="trusted" />
+							<img src={require("../../assets/images/trustpilot-energy-reviews.png")} alt="trusted" />
+							<img src={require("../../assets/images/trustpilot-energy-reviews.png")} alt="trusted" />
 						</div>
 				</div>
 				<div className="topbar-widget">

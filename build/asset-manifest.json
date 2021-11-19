@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/my-aladdin/static/css/main.837b91c3.chunk.css",
+    "main.js": "/my-aladdin/static/js/main.d92a2230.chunk.js",
+    "main.js.map": "/my-aladdin/static/js/main.d92a2230.chunk.js.map",
+    "runtime-main.js": "/my-aladdin/static/js/runtime-main.29f7f58f.js",
+    "runtime-main.js.map": "/my-aladdin/static/js/runtime-main.29f7f58f.js.map",
+    "static/css/2.ea24616f.chunk.css": "/my-aladdin/static/css/2.ea24616f.chunk.css",
+    "static/js/2.a4bc40c9.chunk.js": "/my-aladdin/static/js/2.a4bc40c9.chunk.js",
+    "static/js/2.a4bc40c9.chunk.js.map": "/my-aladdin/static/js/2.a4bc40c9.chunk.js.map",
+    "static/js/3.1af14248.chunk.js": "/my-aladdin/static/js/3.1af14248.chunk.js",
+    "static/js/3.1af14248.chunk.js.map": "/my-aladdin/static/js/3.1af14248.chunk.js.map",
+    "index.html": "/my-aladdin/index.html",
+    "precache-manifest.ad6e984189deddde5354ed6e2ef288c8.js": "/my-aladdin/precache-manifest.ad6e984189deddde5354ed6e2ef288c8.js",
+    "service-worker.js": "/my-aladdin/service-worker.js",
+    "static/css/2.ea24616f.chunk.css.map": "/my-aladdin/static/css/2.ea24616f.chunk.css.map",
+    "static/css/main.837b91c3.chunk.css.map": "/my-aladdin/static/css/main.837b91c3.chunk.css.map",
+    "static/js/2.a4bc40c9.chunk.js.LICENSE.txt": "/my-aladdin/static/js/2.a4bc40c9.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/my-aladdin/static/media/icofont.f6ab04ae.woff",
+    "static/media/destination1.jpeg": "/my-aladdin/static/media/destination1.20013c07.jpeg",
+    "static/media/logo-clipart.png": "/my-aladdin/static/media/logo-clipart.553ce532.png",
+    "static/media/secure-payment-page-960x300-1.gif": "/my-aladdin/static/media/secure-payment-page-960x300-1.56efb5d5.gif",
+    "static/media/xbg_1.jpg.pagespeed.ic.GQT90DL5zP.webp": "/my-aladdin/static/media/xbg_1.jpg.pagespeed.ic.GQT90DL5zP.1904fdd0.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29f7f58f.js",
+    "static/css/2.ea24616f.chunk.css",
+    "static/js/2.a4bc40c9.chunk.js",
+    "static/css/main.837b91c3.chunk.css",
+    "static/js/main.d92a2230.chunk.js"
+  ]
+}

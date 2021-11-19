@@ -2,12 +2,14 @@
   "name": "my-aladdin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shakirgith.github.io/my-aladdin",
   "dependencies": {
     "@har/cli": "^1.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.1",
+    "gh-pages": "^3.2.3",
     "owl.carousel": "^2.3.4",
     "react": "^17.0.2",
     "react-bootstrap-toggle": "^2.3.2",
@@ -23,8 +25,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build", 
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
