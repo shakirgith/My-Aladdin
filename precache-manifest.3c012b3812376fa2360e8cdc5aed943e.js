@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8292e35e8bc1aacf5823bbda546d53c1",
+    "revision": "fe6438e5a6c32252ead12849cbaeac44",
     "url": "/my-aladdin/index.html"
   },
   {
-    "revision": "086fa5a312a2648c9a04",
+    "revision": "881e9770bcf91ce46aca",
     "url": "/my-aladdin/static/css/2.ea24616f.chunk.css"
   },
   {
-    "revision": "98fd72acc0f57c4f2588",
+    "revision": "c421324bc8f9523aabfa",
     "url": "/my-aladdin/static/css/main.837b91c3.chunk.css"
   },
   {
-    "revision": "086fa5a312a2648c9a04",
-    "url": "/my-aladdin/static/js/2.a4bc40c9.chunk.js"
+    "revision": "881e9770bcf91ce46aca",
+    "url": "/my-aladdin/static/js/2.0b1e4d80.chunk.js"
   },
   {
     "revision": "a6f3c001137bb93a804657dd621b71b9",
-    "url": "/my-aladdin/static/js/2.a4bc40c9.chunk.js.LICENSE.txt"
+    "url": "/my-aladdin/static/js/2.0b1e4d80.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc00ed7bf3ecbbc28a89",
-    "url": "/my-aladdin/static/js/3.1af14248.chunk.js"
+    "revision": "8f84bd4b4beda8fee05e",
+    "url": "/my-aladdin/static/js/3.371fbcc2.chunk.js"
   },
   {
-    "revision": "98fd72acc0f57c4f2588",
-    "url": "/my-aladdin/static/js/main.d92a2230.chunk.js"
+    "revision": "c421324bc8f9523aabfa",
+    "url": "/my-aladdin/static/js/main.31495a79.chunk.js"
   },
   {
-    "revision": "78edf786f132c10291b9",
-    "url": "/my-aladdin/static/js/runtime-main.29f7f58f.js"
+    "revision": "a2e61655339538d56c94",
+    "url": "/my-aladdin/static/js/runtime-main.865fdf7f.js"
   },
   {
     "revision": "c7d039dc0f821cf726adf37137afe2ee",

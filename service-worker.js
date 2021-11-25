@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/my-aladdin/precache-manifest.ad6e984189deddde5354ed6e2ef288c8.js"
+  "/my-aladdin/precache-manifest.3c012b3812376fa2360e8cdc5aed943e.js"
 );
 
 self.addEventListener('message', (event) => {
